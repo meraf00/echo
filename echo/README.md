@@ -1,16 +1,24 @@
-# echo
+# Linters
 
-A new Flutter project.
+To setup up linter for flutter project add flutter_lints package to dev_dependencies in pubspec.yaml file.
 
-## Getting Started
+```bash
+flutter pub add dev:flutter_lints
+```
 
-This project is a starting point for a Flutter application.
+Add rules to [analysis_options.yaml](analysis_options.yaml) file.
 
-A few resources to get you started if this is your first Flutter project:
+```yaml
+rules:
+  prefer_single_quotes: true
+  prefer_relative_imports: true
+  directives_ordering: true
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+For more rules visit [here](https://dart.dev/tools/linter-rules#rules)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Run the linter.
+
+```bash
+flutter analyze
+```
