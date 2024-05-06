@@ -6,7 +6,7 @@ To setup up linter for flutter project add flutter_lints package to dev_dependen
 > flutter pub add dev:flutter_lints
 ```
 
-Add rules to [analysis_options.yaml](/analysis_options.yaml) file.
+Add rules to [analysis_options.yaml](analysis_options.yaml) file.
 
 ```yaml
 rules:
